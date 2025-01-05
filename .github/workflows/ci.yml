@@ -22,5 +22,8 @@ jobs:
       - name: Check Java version
         run: java -version
 
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
       - name: Build and run tests
         run: ./gradlew test
