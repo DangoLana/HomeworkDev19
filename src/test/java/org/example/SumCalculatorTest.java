@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SumCalculatorTest {
     private SumCalculator sumCalculator;
 
-  /*  @BeforeEach
+    @BeforeEach
     public void setUp() {
         sumCalculator = new SumCalculator();
     }
@@ -26,6 +26,6 @@ class SumCalculatorTest {
     @Test
     public void testSumWith0ThrowsIllegalArgumentException() {
         assertThrows(IllegalArgumentException.class, () -> sumCalculator.sum(0));
-    }*/
+    }
 
 }
