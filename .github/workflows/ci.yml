@@ -17,7 +17,10 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '21'
-          distribution: 'adoptopenjdk'
+          distribution: 'temurin'
 
-      - name: Gradle build
+      - name: Check Java version
+        run: java -version
+
+      - name: Build and run tests
         run: ./gradlew test
